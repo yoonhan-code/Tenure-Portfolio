@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Yoon Shik Han - Tenure Portfolio</title>
+    <style>
+        :root {
+            --primary-color: #003366; /* Edmonds College Blue */
+            --secondary-color: #f8f9fa; /* Very light grey */
+            --text-color: #1a1a1a; /* High contrast black */
+            --accent-color: #ffd700; /* Gold */
+            --nav-hover: #004080;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.8;
+            color: var(--text-color);
+            font-size: 20px;
+            background-color: #fff;
+        }
+        
+        /* High Contrast Header */
+        header {
+            background: var(--primary-color);
+            color: #fff;
+            padding: 1.5rem 0;
+            text-align: center;
+            border-bottom: 5px solid var(--accent-color);
+        }
+        header h1 { margin: 0; font-size: 3rem; letter-spacing: 1px; }
+        header h2 { margin: 10px 0 0 0; font-weight: 400; font-size: 1.5rem; }
+        
+        /* Navigation Bar */
+        nav {
+            background: #222;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        nav ul li {
+            position: relative;
+            border-right: 1px solid #444;
+        }
+        nav ul li:last-child { border-right: none; }
+        
+        /* Large, Clickable Links */
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 20px 25px;
+            display: block;
+            font-size: 1.1rem;
+            transition: background 0.3s;
+        }
+        nav a:hover { 
+            background: var(--nav-hover); 
+            color: var(--accent-color);
+        }
+
+        /* Dropdown Menu */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            min-width: 350px;
+            max-height: 500px; 
+            overflow-y: auto;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+            z-index: 1000;
+            text-align: left;
+            border: 2px solid var(--primary-color);
+        }
+        .dropdown-content a {
+            color: #000;
+            padding: 15px 20px;
+            text-decoration: none;
+            display: block;
+            border-bottom: 1px solid #eee;
+            font-size: 1.1rem;
+        }
+        .dropdown-content a:hover { 
+            background-color: #e6f0ff; 
+            color: var(--primary-color);
+        }
+        
+        /* Headers inside Dropdowns */
+        .dropdown-header {
+            background-color: #eee;
+            color: #333;
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-bottom: 2px solid #ccc;
+            position: sticky; 
+            top: 0;
+        }
+
+        .dropdown:hover .dropdown-content { display: block; }
+
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+        
+        /* Welcome Section */
+        .welcome-section {
+            display: flex;
+            align-items: center;
+            background: var(--secondary-color);
+            padding: 40px;
+            border-left: 8px solid var(--primary-color);
+            margin-bottom: 40px;
+            border-radius: 4px;
+            gap: 40px;
+        }
+
+        .welcome-text { flex: 2; }
+
+        .welcome-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .welcome-image img {
+            max-width: 100%;
+            border-radius: 50%;
+            border: 5px solid var(--primary-color);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        h3.section-title {
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--accent-color);
+            padding-bottom: 10px;
+            margin-top: 50px;
+            font-size: 1.8rem;
+        }
+        
+        footer {
+            background: #222;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+            font-size: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .welcome-section {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Dr. Yoon Shik Han</h1>
+        <h2>Tenure Review Portfolio | Edmonds College</h2>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            
+            <li class="dropdown">
+                <a href="#">Personal Docs &#9662;</a>
+                <div class="dropdown-content">
+                    <a href="Resume_Edmond.pdf" target="_blank">Curriculum Vitae (Resume)</a>
+                    <a href="Yoon Shik Han Biography_Edmonds.pdf" target="_blank">Professional Biography</a>
+                    <a href="Certificates.pdf" target="_blank">License & Certificates</a>
+                     
+                    <div class="dropdown-header">Self-Evaluations</div>
+                    <a href="Self-evaluation_2025.pdf" target="_blank">Full 2025 Report</a>
+                    <a href="Self_Evaluation_Summary.pdf" target="_blank">Executive Summary</a>
+                </div>
+            </li>
+
+            <li class="dropdown">
+                <a href="#">Teaching &#9662;</a>
+                <div class="dropdown-content">
+                    
+                    <div class="dropdown-header">Teaching Philosophy</div>
+                    <a href="Teaching_Philosophy.pdf" target="_blank">Statement of Philosophy</a>
+
+                    <div class="dropdown-header">Evaluation</div>
+                    <a href="Summary of Student Evaluation.pdf" target="_blank">Summary of Student Evaluations</a>
+                    
+                    <div class="dropdown-header">Letters from Students</div>
+                    <a href="Student Letter_Corina.pdf" target="_blank">Letter from Corina</a>
+                    <a href="Student Letter_Oksana.pdf" target="_blank">Letter from Oksana</a>
+                    <a href="Student Letter_Hayli.pdf" target="_blank">Letter from Hayli</a>
+                    <a href="Student Letter_Anil.pdf" target="_blank">Letter from Anil</a>
+                    <a href="Student Letter_David.pdf" target="_blank">Letter from David</a>
+                    <a href="Student Letter_Feng.pdf" target="_blank">Letter from Feng</a>
+                    <a href="Student Letter_Joseph.pdf" target="_blank">Letter from Joseph</a>
+                    <a href="Student Letter_Karla.pdf" target="_blank">Letter from Karla</a>
+                    <a href="Student Letter_Khanh Trinh.pdf" target="_blank">Letter from Khanh Trinh</a>
+                    <a href="Student Letter_Ming.pdf" target="_blank">Letter from Ming</a>
+                    <a href="Student Letter_Sulo.pdf" target="_blank">Letter from Sulo</a>
+
+                    <div class="dropdown-header">Letters from Colleagues and ARC members</div>
+                    <a href="#.pdf" target="_blank">Letter from Deborah</a>
+                    <a href="#.pdf" target="_blank">Letter from Barry</a>
+                    <a href="Letter of Recommendation_Ryan.pdf" target="_blank">Letter from Ryan</a>
+
+                    <div class="dropdown-header">Syllabus</div>
+                    <a href="Syllabus_ACCT101.pdf" target="_blank">ACCT 101 Syllabus</a>
+                    <a href="Syllabus_ACCT201.pdf" target="_blank">ACCT& 201 Syllabus</a>
+                    <a href="Syllabus_ACCT202.pdf" target="_blank">ACCT& 202 Syllabus</a>
+                    <a href="Syllabus_ACCT203.pdf" target="_blank">ACCT& 203 Syllabus</a>
+                </div>
+            </li>
+
+            <li class="dropdown">
+                <a href="#">Students &#9662;</a>
+                <div class="dropdown-content">
+                    <div class="dropdown-header">Accounting Club Activities</div>
+                    <a href="Accounting_Club_Activities.docx" target="_blank">Accounting Club Activities</a>
+                    <a href="Personal Finance 101.pdf" target="_blank">Personal Finance 101</a>
+                </div>
+            </li>
+
+            <li class="dropdown">
+                <a href="#">Committee Works &#9662;</a>
+                <div class="dropdown-content">
+                    <div class="dropdown-header">Tenure Reports</div>
+                    <a href="ARC_Yoon_Report_Dec.2025.Sign_copy.pdf" target="_blank">ARC Report (Dec 2025)</a>
+                    <a href="#" target="_blank">Final Report (Feb 2026)</a>
+
+                    <div class="dropdown-header">College Budget Advisory Committee</div>
+                    <a href="Summary_Notes.pdf" target="_blank">Summary Notes</a>
+                    <a href="notes.pdf" target="_blank">Budget Advisory Committee Notes</a>
+                    
+
+                    <div class="dropdown-header">IRB (Institutional Review Board)</div>
+                    <a href="citiCompletionCertificate_15180953_74517636.pdf" target="_blank">IRB Members (Basic)</a>
+                    <a href="citiCompletionCertificate_15180953_74517637.pdf" target="_blank">Conflicts of Interest</a>
+                    <a href="citiCompletionCertificate_15180953_75047675.pdf" target="_blank">Social & Behavioral Researchers</a>
+                    <a href="citiCompletionCertificate_15180953_74517635.pdf" target="_blank">Research Interviewers</a>
+
+                    
+                </div>
+            </li>
+            
+            <li class="dropdown">
+                <a href="#">Other Works &#9662;</a>
+                <div class="dropdown-content">
+                    <a href="AI LibGuide.pdf" style="color:black;">AI Pedagogies Work Group</a>
+                    <a href="Sandbox for Gen AI.pdf" style="color:black;">AI and Teaching Focus Group</a>
+                </div>
+                
+            </li>
+            
+            </ul>
+    </nav>
+
+    <div class="container">
+        
+        <div class="welcome-section">
+            <div class="welcome-image">
+                <img src="profile_picture.jpg" alt="Dr. Yoon Shik Han">
+            </div>
+            <div class="welcome-text">
+                <h2>Bridging Theory & Practice</h2>
+                <p><strong>"Accounting is the language of business—let's teach students to speak it with confidence."</strong></p>
+                <p>Welcome to my tenure portfolio. At Edmonds College, my mission is to empower the next generation of financial leaders by blending rigorous academic standards with real-world insights from over three decades of academic and business experience.</p>
+                <p>Here, you will find evidence of my commitment to student success, innovative pedagogies, and collaborative services for the College.</p>
+            </div>
+        </div>
+
+        <h3 class="section-title">Navigation Guide</h3>
+        <ul>
+            <li><strong>Personal Docs:</strong> My professional journey and self-reflections.</li>
+            <li><strong>Teaching:</strong> Philosophy, Evaluations, Letters, and Syllabi.</li>
+            <li><strong>Students:</strong> Accounting Club activities and mentorship.</li>
+            <li><strong>Committee Works:</strong> ARC reports, IRB certifications, and College Budget Advisory Committee service.</li>
+            <li><strong>Other Works:</strong> AI Pedgogies Work Group, AI and Teaching Focus Group.</li>
+        </ul>
+
+        <h3 class="section-title">Contact Information</h3>
+        <p><strong>Dr. Yoon Shik Han, CPA, CGMA, CFE</strong><br>
+        Department of Accounting<br>
+        Edmonds College<br>
+        Email: yoon.han@edmonds.edu</p>
+
+    </div>
+
+    <footer>
+        <p>Edmonds College | Tenure Portfolio &copy; 2026 Dr. Yoon Shik Han</p>
+    </footer>
+
+</body>
+</html>
